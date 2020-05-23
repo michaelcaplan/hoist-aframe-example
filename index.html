@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, WebVR! - A-Frame</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      
+      <a-assets>
+        <a-asset-item id="tree-obj" src="https://cdn.glitch.com/b6963ad4-746f-415b-a1a3-ec626af03d0a%2Ftinker.obj?1531997375296"></a-asset-item>
+        <a-asset-item id="tree-mtl" src="https://cdn.glitch.com/b6963ad4-746f-415b-a1a3-ec626af03d0a%2Fobj.mtl?1531997379981"></a-asset-item>
+      </a-assets>
+
+      <a-entity scale="0.1 0.1 0.1" position="2.7 1.75 -5" rotation="-34.5 -5.89 -36.19" obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
+      
+      <a-sky src="https://cdn.glitch.com/8bdf496e-4a29-4100-abb8-7695239c9ba1%2F3538046700_6a6cfb5a65_o.jpg?1527606404690"></a-sky>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="purple"></a-sphere>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="green"></a-box>
+      <a-cylinder src="https://cdn.glitch.com/8bdf496e-4a29-4100-abb8-7695239c9ba1%2F2558729880_7baf02e931_b.jpg?1527607175906" position="1 0.75 -3" radius="0.5" height="1.5">
+        <a-animation attribute="position" to="-1 1.5 -3" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
+      </a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="yellow"></a-plane>
+    </a-scene>
+  </body>
+</html>
